@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS Effectively</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <!-- Webbeam Effect on Both Sides -->
+    <div class="webbeam-effect-left"></div>
+    <div class="webbeam-effect-right"></div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">CSS World</div>
+        <nav>
+            <ul>
+                <li><a href="#what-is-css">What is CSS?</a></li>
+                <li><a href="#inline-css">Inline CSS</a></li>
+                <li><a href="#embedded-css">Embedded CSS</a></li>
+                <li><a href="#external-css">External CSS</a></li>
+                <li><a href="#validation">Validation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to the World of CSS</h1>
+            <p>Learn CSS effectively with interactive examples and explanations. Become proficient in styling websites.</p>
+        </div>
+    </section>
+
+    <!-- Section 1: What is CSS? -->
+    <section id="what-is-css">
+        <h2>What is CSS?</h2>
+        <p>CSS (Cascading Style Sheets) is a language used to define the visual appearance of a web page written in HTML or XML. It controls the layout, color schemes, fonts, spacing, and other visual aspects of a web page. Without CSS, web pages would be plain and difficult to navigate, giving a poor user experience.</p>
+    </section>
+
+    <!-- Section 2: Inline CSS -->
+    <section id="inline-css">
+        <h2>Inline CSS</h2>
+        <p>Inline CSS is used to apply styles directly to a specific HTML element using the <code>style</code> attribute. This style will only affect that particular element.</p>
+        <p style="color: #ff6347;">This text is styled using Inline CSS!</p>
+    </section>
+
+    <!-- Section 3: Embedded CSS -->
+    <section id="embedded-css">
+        <h2>Embedded CSS</h2>
+        <p>Embedded CSS refers to styles that are written inside a <code>&lt;style&gt;</code> tag within the <code>&lt;head&gt;</code> section of an HTML document. It’s a great option when you want to style elements within a single document.</p>
+        <pre>
+            &lt;style&gt;
+                .example-class {
+                    color: #ff1493;
+                    font-weight: bold;
+                }
+            &lt;/style&gt;
+        </pre>
+        <p class="example-class">This text is styled using Embedded CSS!</p>
+    </section>
+
+    <!-- Section 4: External CSS -->
+    <section id="external-css">
+        <h2>External CSS</h2>
+        <p>External CSS is the most efficient way to apply styles to multiple pages of a website. You link a separate CSS file using the <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> section of the HTML file.</p>
+        <pre>
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+        </pre>
+        <p class="external-example">This text is styled using External CSS!</p>
+    </section>
+
+    <!-- Validation Section -->
+    <section id="validation">
+        <h2>Website Validation</h2>
+        <p>We’ve validated our website with a CSS validator to ensure that all styles are correctly applied and error-free. Here’s a screenshot of the validation results:</p>
+        <img src="validation-screenshot.png" alt="Website Validation Screenshot">
+    </section>
+</body>
+</html>
